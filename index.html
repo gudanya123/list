@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="Keywords" content="IT大哥导航_ITDAGE_程序员网站导航_程序员导航_程序员必备_导航">
+		<meta name="description" content="IT大哥导航_ITDAGE_程序员网站导航_程序员导航_程序员必备_导航">
+		<link rel="icon" href="./images/list.png">
+		<title>程序员的第一步 - 归类导航</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+	</head>
+	<style type="text/css" id="312665000"></style>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<script src="js/main.js"></script>
+	<body class="shortcut-fixed" style="zoom: 1;">
+		<div id="header">
+			<div class="wrapper">
+				<header>
+					<a href="https://www.itdage.com/" title="IT大哥导航">
+						<h1 id="logo"></h1>
+					</a>
+				</header>
+				<div id="search">
+
+					<form target="_blank">
+						<input id="soInput" type="text" onkeydown="calAge(event)" class="keyword default-word" name="wd"
+							oninput="inputVal = this.value"><input id="so" type="button" value="百度一下" onclick="start()"
+							name="baidu" class="button">
+						<select class="but2" id="select_s" onchange="changeForm(this.value)">
+							<option value="0"></option>
+							<option value="0">百度</option>
+							<option value="1">github</option>
+							<option value="2">京东搜索</option>
+							<option value="3">淘宝搜索</option>
+							<option value="4">当当图书</option>
+							<option value="5">哔哩哔哩</option>
+							<option value="6">快手搜索</option>
+							<option value="7">腾讯视频</option>
+							<option value="8">爱奇艺</option>
+							<option value="9">芒果tv</option>
+							<option value="10">小说搜索</option>
+							<option value="11">漫画搜索</option>
+							<option value="12">微信文章</option>
+							<option value="13">知乎文章</option>
+							<option value="14">CSDN文章</option>
+							<option value="15">CSDN文件</option>
+						</select>
+					</form>
+				</div>
+				<div class="tools"> <a href="https://translate.google.cn/" class="icon-translate" title="谷歌网页翻译工具"
+						target="_blank">翻译工具</a> <a href="http://39.96.186.138/u.html?userid=33#" class="icon-add" title="联系我们"
+						target="_blank">联系我</a> <a
+						href="javascript:window.external.AddFavorite"
+						class="icon-favor" title="加入收藏">按Ctrl+D收藏导航</a></div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="guide">
+				<div class="wrapper">
+					<nav class="site-list">
+					</nav>
+					<section class="estab">
+
+					</section>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div id="catalog">
+					<section data-catalog="download" class="active">
+						<header>
+							<h2 class="icon-download">我的收藏</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"> <a href="https://github.com/gudanya123?tab=repositories" class="website"
+									target="_blank">myGitHub</a>
+								<p class="description">管理我的GitHub项目 </p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="http://www.pc6.com/" class="website"
+									target="_blank">pc6下载站</a>
+								<p class="description">pc6下载站：安全、高速、放心的专业下载站！</p>
+							</li>
+					
+							<li class="hot-item hot-item1"> <a href="https://ecs.console.aliyun.com/" class="website"
+									target="_blank">阿里云服务器</a>
+								<p class="description">云服务器配置</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="http://www.chongbuluo.cn/" class="website"
+									target="_blank">虫部落</a>
+								<p class="description">聚合导航</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.maliquankai.com/" class="website"
+									target="_blank">码力全开</a>
+								<p class="description">资源库</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.hippter.com/" class="website"
+									target="_blank">HiPPTer</a>
+								<p class="description">PPT模板</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://wallhaven.cc/" class="website"
+									target="_blank">WallHeaven</a>
+								<p class="description">图片壁纸库</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://site.sciping.com/" class="website"
+									target="_blank">科塔学术</a>
+								<p class="description">学术导航</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.videvo.net/" class="website"
+									target="_blank">Videvo</a>
+								<p class="description">视频音乐素材</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://www.bilibili.com/video/BV1454y1X7ez?from=search&seid=3223009430565468149" class="website"
+									target="_blank">2020黑马畅购项目</a>
+								<p class="description">微服务项目</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://leetcode-cn.com/" class="website"
+									target="_blank">LeetCode</a>
+								<p class="description">练功房</p>
+							</li>
+					
+							<li class="hot-item hot-item5"> <a href="https://mp.weixin.qq.com/" class="website"
+									target="_blank">微信公众平台</a>
+								<p class="description">小程序和公众号</p>
+							</li>
+					
+							<li class="hot-item hot-item2"> <a href="https://element.eleme.io/" class="website"
+									target="_blank">element-ui</a>
+								<p class="description">vue的ui组件库</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://juejin.cn/" class="website"
+									target="_blank">掘金博客</a>
+								<p class="description">记录点滴</p>
+							</li>
+							<li class="hot-item hot-item2"> <a
+									href="https://www.innoreader.com/welcome" class="website"
+									target="_blank">innoreader</a>
+								<p class="description">数据源资料归纳</p>
+							</li>
+						</ul>
+					</section>
+					<section data-catalog="download" class="active">
+						<header>
+							<h2 class="icon-download">热门推荐</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"> <a href="http://www.github.com/" class="website"
+									target="_blank">GitHub</a>
+								<p class="description">GitHub 是一个面向开源及私有软件项目的托管平台</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.oschina.net/" class="website"
+									target="_blank">开源中国</a>
+								<p class="description">开源中国是目前国内最大的开源技术社区</p>
+							</li>
+
+							<li class="hot-item hot-item1"> <a href="https://www.zhihu.com/" class="website"
+									target="_blank">知乎</a>
+								<p class="description">有问题,上知乎。知乎,可信赖的问答社区</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.bilibili.com/" class="website"
+									target="_blank">哔哩哔哩</a>
+								<p class="description">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.jianshu.com/" class="website"
+									target="_blank">简书</a>
+								<p class="description">简书是一个优质的创作社区</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://toutiao.io/" class="website"
+									target="_blank">LeetCode</a>
+								<p class="description">程序员必逛刷题平台</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://shimo.im/" class="website"
+									target="_blank">石墨文档</a>
+								<p class="description">石墨文档是云 Office 办公软件</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://www.csdn.net/" class="website"
+									target="_blank">CSDN</a>
+								<p class="description">CSDN是全球知名中文IT技术交流平台</p>
+							</li>
+
+							<li class="hot-item hot-item5"> <a href="html/ideakeys.html" class="website"
+									target="_blank">IDEA快捷键</a>
+								<p class="description">精心整理常用IDEA快捷键和快捷键大全</p>
+							</li>
+
+							<li class="hot-item hot-item2"> <a href="https://imgchr.com/" class="website"
+									target="_blank">路过图床</a>
+								<p class="description">路过图床-高速稳定的图片上传和外链服务，全球CDN加速</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.iconfont.cn/" class="website"
+									target="_blank">iconfont</a>
+								<p class="description">国内功能很强大且图标内容很丰富的矢量图标库</p>
+							</li>
+							<li class="hot-item hot-item2"> <a
+									href="https://www.aliyun.com/minisite/goods?userCode=k6ji3ksd" class="website"
+									target="_blank">阿里云</a>
+								<p class="description">上云优惠聚集地</p>
+							</li>
+						</ul>
+					</section>
+					<!-- 
+      <section data-catalog="tutorials" class="active">
+        <header>
+          <h2 class="icon-tutorials">国家精品（公开课）</h2>
+        </header>
+        <ul class="website-list">
+		 <li class="hot-item hot-item1"> <a href="https://www.icourse163.org/course/PKU-1003471009" class="website" target="_blank">人工智能与信息社会</a>
+            <p class="description">北京大学-陈斌（教授）- 微软产学合作协同育人项目成果</p>
+          </li>
+          <li class="hot-item hot-item1"><a href="https://www.icourse163.org/course/PKU-1002529002" class="website" target="_blank">计算概论</a>
+            <p class="description">北京大学-李戈（副教授）- 入学之后的第一门专业基础课程</p>
+          </li>
+          <li class="hot-item hot-item2"> <a href="https://www.icourse163.org/course/BIT-1001870001" class="website" target="_blank">Python网络爬虫</a>
+            <p class="description">北京理工-嵩天（副教授）- Python网络爬虫</p>
+          </li>
+          <li class="hot-item hot-item1"> <a href="https://www.icourse163.org/course/ZJU-93001" class="website" target="_blank">数据结构</a>
+            <p class="description">浙江大学-陈越、何钦铭两位教授联合授课 - 数据结构</p>
+          </li>
+          <li class="hot-item hot-item1"> <a href="https://www.icourse163.org/course/PKU-1001941004" class="website" target="_blank">Java程序设计</a>
+            <p class="description">北京大学-唐大仕（博士）- Java程序设计</p>
+          </li>
+          <li class="hot-item hot-item3"> <a href="https://www.icourse163.org/course/BIT-1001871001" class="website" target="_blank">Python三维可视化</a>
+            <p class="description">北京理工-嵩天、黄天羽两位副教授联合授课 - Python科学计算三维可视化</p>
+          </li>
+          <li class="hot-item hot-item2"> <a href="https://www.icourse163.org/course/NJU-1002246017" class="website" target="_blank">Java面向对象范式</a>
+            <p class="description">南京大学-刘钦（讲师） 是一门讲面向对象思想的课程</p>
+          </li>
+          <li class="hot-item hot-item4"> <a href="https://www.icourse163.org/course/NJU-1001571004" class="website" target="_blank">计算机操作系统</a>
+            <p class="description">南京大学-骆斌（教授、博导）- 计算机操作系统</p>
+          </li>
+          <li class="hot-item hot-item2"> <a href="https://www.icourse163.org/course/HIT-56001" class="website" target="_blank">程序设计基础</a>
+            <p class="description">哈尔滨工业大学-苏小红（教授、博导）- 程序设计基础</p>
+          </li>
+          <li class="hot-item hot-item1"><a href="https://www.icourse163.org/course/PKU-1002188003" class="website" target="_blank">人工智能原理</a>
+            <p class="description">北京大学-王文敏（教授）-  人工智能原理</p>
+          </li>
+          <li class="hot-item hot-item3"> <a href="https://www.icourse163.org/course/XMU-1001771003" class="website" target="_blank">C程序设计基础</a>
+            <p class="description">厦门大学-黄洪艺（副教授）- C程序设计基础</p>
+          </li>
+          <li class="hot-item hot-item1"> <a href="https://www.icourse163.org/course/HIT-10001" class="website" target="_blank">大数据算法</a>
+            <p class="description">哈尔滨工业大学-王宏志（教授、博导）大数据算法</p>
+          </li>
+          
+        </ul>
+         </section>
+		  -->
+
+
+					<section data-catalog="inspiration">
+						<header>
+							<h2 class="icon-inspiration">轻松一刻（程序员）</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/eH8BrXSADs5826pd5QRcKg"
+									class="website" target="_blank">必备表情包</a>
+								<p class="description">看到这些程序员图片 ， 笑哭了！</p>
+							</li>
+							<li class="hot-item hot-item4"><a href="https://mp.weixin.qq.com/s/McTNUcYhfbrfZYyjEbP83g"
+									class="website" target="_blank">领导让写bug</a>
+								<p class="description">老板竟然要求程序员写出一个有Bug的程序！</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/bDKkdyHDsY46MJBuVkn90w"
+									class="website" target="_blank">漫画版程序员日常</a>
+								<p class="description">一套漫画，让你了解程序员日常 ！内容太真实了。</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://mp.weixin.qq.com/s/XgwgoF7QWyLd2V5p0o2yHg"
+									class="website" target="_blank">程序员的格子衫</a>
+								<p class="description">冬天到了， 程序员难道还穿格子衫过冬？被真相笑死了。</p>
+							</li>
+							<li class="hot-item hot-item4"><a href="https://mp.weixin.qq.com/s/3AlJARUriH_FZPTif-TSvg"
+									class="website" target="_blank">杀程序员祭天</a>
+								<p class="description">旧新闻：项目上线 ， 他们杀了一个程序员祭天</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://mp.weixin.qq.com/s/xBRseELXc_Nmpr34SA44-w"
+									class="website" target="_blank">程序员又打产品</a>
+								<p class="description">说起产品经理与程序员，简直就是一对冤家。</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/l3Y6IZMGScSv-2kxZu5qWA"
+									class="website" target="_blank">程序员男友？</a>
+								<p class="description">找个程序员做男友，哈哈哈哈哈哈生活太难了</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="https://mp.weixin.qq.com/s/CWYFv2m1ENGnENzNcACJvA"
+									class="website" target="_blank">HTML、CSS的区别</a>
+								<p class="description">超搞笑：一图看懂HTML，CSS 和 JavaScript 以及 Java有什么区别</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/hx4BwaxwKU_KHzjDwRd0sA"
+									class="website" target="_blank">程序员崩溃瞬间</a>
+								<p class="description">让程序员们崩溃的40个瞬间</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/FDvAgipjm3rw24F4rcVc_Q"
+									class="website" target="_blank">程序员神器</a>
+								<p class="description">笑崩。有了这些程序猿神器，你就是这条街最亮的仔</p>
+							</li>
+							<li class="hot-item hot-item4"><a href="https://mp.weixin.qq.com/s/IxHjqGdJxmy_9axsxbUVcQ"
+									class="website" target="_blank">程序员骚操作</a>
+								<p class="description">666，美国程序员上班逗猫，把工作外包给中国程序员~</p>
+							</li>
+							<li class="hot-item hot-item4"><a href="https://mp.weixin.qq.com/s/tuS-kxDTAtXCYKU3MFVkmg"
+									class="website" target="_blank">工程师和码农区别</a>
+								<p class="description">常有人说，“那些只学了XX语言的人，编程能力都退化成什么样了？”</p>
+							</li>
+						</ul>
+					</section>
+					<section data-catalog="template">
+						<header>
+							<h2 class="icon-template">网站模版</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"> <a href="https://www.templatemonster.com/cn/"
+									class="website" target="_blank">网页模版巨人</a>
+								<p class="description">著名的网页模版库，借鉴和学习网页趋势的宝地</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://onepagelove.com/" class="website"
+									target="_blank">迷你网站模版分享</a>
+								<p class="description">推荐！提供海量单页模版展示和素材资源的网站</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.landingfolio.com/" class="website"
+									target="_blank">登录界面模版网</a>
+								<p class="description">推荐！整合了各个行业的网站登录页面模版资源</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://templates.entheosweb.com/" class="website"
+									target="_blank">Entheos Templates</a>
+								<p class="description">强大的模板库，包括最流行的响应式网页、HTML5酷站</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="http://www.dreamtemplate.com/" class="website"
+									target="_blank">梦幻模板</a>
+								<p class="description">超过7000个梦幻般的网站模板及Flash模板</p>
+							</li>
+							<li class="hot-item hot-item1"> <a href="https://www.templateworld.com/" class="website"
+									target="_blank">网页模版世界</a>
+								<p class="description">提供各种专业的网页开发模板，记得利用好左侧的分类</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://www.wix.com/" class="website"
+									target="_blank">享誉全球的 WIX</a>
+								<p class="description">超赞！该站全球排名378！可以帮你免费定制网站</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://www.freewebtemplates.com/" class="website"
+									target="_blank">免费模版库</a>
+								<p class="description">历史悠久的老站点，1999年就致力于分享免费网站模版</p>
+							</li>
+							<li class="hot-item hot-item2"> <a href="https://templated.co/" class="website"
+									target="_blank">Templated</a>
+								<p class="description">免费响应式模版分享网，汇集了一大批优质网站作品</p>
+							</li>
+							<li class="hot-item hot-item3"> <a href="http://www.buytemplates.net/products/search"
+									class="website" target="_blank">Buy Templates</a>
+								<p class="description">一个卖网页模版的站点</p>
+							</li>
+							<li class="hot-item hot-item3"> <a href="https://themeforest.net/category/site-templates"
+									class="website" target="_blank">ThemeForest</a>
+								<p class="description">TF下的频道，业内最大的网站模板和CMS主题商城之一</p>
+							</li>
+							<li class="hot-item hot-item5"> <a href="https://www.gavick.com/" class="website"
+									target="_blank">GavickPro</a>
+								<p class="description">惊人且美丽的Joomla模板和WordPress主题</p>
+							</li>
+						</ul>
+					</section>
+					<section data-catalog="blog">
+						<header>
+							<h2 class="icon-blog">行业名博</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"><a href="https://tech.meituan.com/" class="website"
+									target="_blank">美团团队</a>
+								<p class="description">美团团队技术博客</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://blog.klmobile.app/" class="website"
+									target="_blank">网易考拉团队</a>
+								<p class="description">网易考拉技术团队</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://joyrun.github.io/" class="website"
+									target="_blank">悦跑圈团队</a>
+								<p class="description">悦跑圈技术团队</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://tech.youzan.com/" class="website"
+									target="_blank">有赞团队</a>
+								<p class="description">有赞技术团队</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="http://jm.taobao.org/" class="website"
+									target="_blank">阿里中间件团队</a>
+								<p class="description">阿里中间件团队博客</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://blogs.360.cn/" class="website"
+									target="_blank">360核心安全团队</a>
+								<p class="description">360核心安全技术团队博客</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://tech.glowing.com/cn/" class="website"
+									target="_blank">Glow团队</a>
+								<p class="description">Glow 技术团队博客</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://blog.qiniu.com/archives/category/5"
+									class="website" target="_blank">七牛云团队</a>
+								<p class="description">七牛云技术团队博客</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="http://google-opensource.blogspot.hk/  "
+									class="website" target="_blank">google开源博客</a>
+								<p class="description">google开源产品项目博客（墙）</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://blog.twitter.com/engineering"
+									class="website" target="_blank">Twitter团队</a>
+								<p class="description">Twitter技术团队博客（墙）</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://code.facebook.com" class="website"
+									target="_blank">FaceBook团队</a>
+								<p class="description">FaceBook技术团队博客（墙）</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="http://square.github.io/" class="website"
+									target="_blank">Square团队</a>
+								<p class="description">Square技术团队，是业界开源项目最多的公司之一（墙）</p>
+							</li>
+						</ul>
+					</section>
+					<section data-catalog="infomation">
+						<header>
+							<h2 class="icon-infomation">互联网讯</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"><a href="https://www.w3.org/" class="website"
+									target="_blank">W3C官网</a>
+								<p class="description">这是互联网的基础，推荐及时了解前端最新资讯</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://www.runoob.com/" class="website"
+									target="_blank">菜鸟教程</a>
+								<p class="description">菜鸟教程 - 学的不仅是技术,更是梦想!</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://www.huxiu.com/" class="website"
+									target="_blank">虎嗅网</a>
+								<p class="description">一个有视角的、个性化商业资讯与交流平台</p>
+							</li>
+							<li class="hot-ite1m"><a href="http://www.w3school.com.cn/" class="website"
+									target="_blank">w3school在线教程</a>
+								<p class="description">全球最大的中文Web技术教程</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="http://www.geekpark.net/" class="website"
+									target="_blank">极客公园</a>
+								<p class="description">报道互联网热门趋势、热点产品的深度分析。</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://www.cnbeta.com/" class="website"
+									target="_blank">cnBeta中文IT资讯站</a>
+								<p class="description">提供最新最快的IT业界资讯</p>
+							</li>
+
+							<li class="hot-item hot-item2"><a href="https://www.leiphone.com/" class="website"
+									target="_blank">雷锋网</a>
+								<p class="description">专注于移动互联网创业及创新的人气科技博客</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="http://www.donews.com/" class="website"
+									target="_blank">DoNews</a>
+								<p class="description">中国互联网从业人士交流最权威的平台</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="http://tech.163.com/" class="website"
+									target="_blank">网易科技</a>
+								<p class="description">有态度！以独特视角呈现科技圈内大事小事</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="http://www.newhua.com/" class="website"
+									target="_blank">牛华网</a>
+								<p class="description">华军软件园旗下网站，第一时间提供最具价值IT资讯</p>
+							</li>
+							<li class="hot-item hot-item5"><a href="https://www.liaoxuefeng.com/" class="website"
+									target="_blank">廖雪峰</a>
+								<p class="description">研究互联网产品和技术,提供原创中文精品教程.</p>
+							</li>
+						</ul>
+					</section>
+					<section data-catalog="infomation">
+						<header>
+							<h2 class="icon-infomation">面试经验</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/FGeedIDVqB9jM70Os-q16w"
+									class="website" target="_blank">五个刁钻的String问题解答</a>
+								<p class="description">五个刁钻的String面试问题及解答</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/FlooNgJmVnGREWHVB2qYbw"
+									class="website" target="_blank">Spring用了哪些设计模式</a>
+								<p class="description">Spring用了哪些设计模式</p>
+							</li>
+							<li class="hot-item hot-item1"><a
+									href="https://blog.csdn.net/liliangpin/article/details/99792158" class="website"
+									target="_blank">阿里三面经验</a>
+								<p class="description">阿里三面经验</p>
+							</li>
+							<li class="hot-ite1m"><a href="https://mp.weixin.qq.com/s/UtBLaH18LYlWl8Amy0t4Ug"
+									class="website" target="_blank">300道精选面试题</a>
+								<p class="description">300道精选面试题</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://www.jianshu.com/p/c9acbd4639dd"
+									class="website" target="_blank">Java面试攻略</a>
+								<p class="description">Java面试攻略</p>
+							</li>
+							<li class="hot-item hot-item5"><a
+									href="https://baijiahao.baidu.com/s?id=1643207505129754122&wfr=spider&for=pc"
+									class="website" target="_blank">阿里面试经验和技巧</a>
+								<p class="description">阿里面试经验和技巧</p>
+							</li>
+							<li class="hot-item hot-item1"><a
+									href="https://blog.csdn.net/liliangpin/article/details/99792158" class="website"
+									target="_blank">阿里三面经验</a>
+								<p class="description">阿里三面经验</p>
+							</li>
+							<li class="hot-ite1m"><a href="https://mp.weixin.qq.com/s/UtBLaH18LYlWl8Amy0t4Ug"
+									class="website" target="_blank">300道精选面试题</a>
+								<p class="description">300道精选面试题</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://www.jianshu.com/p/c9acbd4639dd"
+									class="website" target="_blank">Java面试攻略</a>
+								<p class="description">Java面试攻略</p>
+							</li>
+							<li class="hot-item hot-item5"><a
+									href="https://baijiahao.baidu.com/s?id=1643207505129754122&wfr=spider&for=pc"
+									class="website" target="_blank">阿里面试经验和技巧</a>
+								<p class="description">阿里面试经验和技巧</p>
+							</li>
+						</ul>
+					</section>
+					<section data-catalog="site">
+						<header>
+							<h2 class="icon-site">轻松二刻（程序员）</h2>
+						</header>
+						<ul class="website-list">
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/63wCyc2wOHfZpklo2-5Iqw"
+									class="website" target="_blank">程序老鸟行话</a>
+								<p class="description">程序老鸟才能理解的行话</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/r4qNcxrF95HEoipfHBqd7w"
+									class="website" target="_blank">程序员形象</a>
+								<p class="description">程序员在各种人眼中的形象</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/dE6Ko87n4H7Ih-S-u4T7uA"
+									class="website" target="_blank">神级评论</a>
+								<p class="description">女程序的一个Twitter引来了一堆神级评论</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/gu4ge9xSQC3-9l1MMM0eaw"
+									class="website" target="_blank">奇葩需求</a>
+								<p class="description">程序员遇到最“奇葩”的需求竟然是。。。</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="https://mp.weixin.qq.com/s/_GzZ_3DX4BpoBb7smRj1Sw"
+									class="website" target="_blank">找女友的天然优势</a>
+								<p class="description">程序员是世界上最符合女神要求的职业</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://mp.weixin.qq.com/s/6zXQvtWMp69kYTiXNFkx-w"
+									class="website" target="_blank">程序表情包</a>
+								<p class="description">一大波程序员必备表情包</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/9Vs8mYIzv34_J55CI9NYTQ"
+									class="website" target="_blank">程序员与禅师</a>
+								<p class="description">直击灵魂：程序员11问禅师。好笑又心酸！</p>
+							</li>
+							<li class="hot-item hot-item3"><a href="https://mp.weixin.qq.com/s/Rxoz79QyZhQv-CoDvplNbA"
+									class="website" target="_blank">搞笑程序动图</a>
+								<p class="description">让你笑到肚子痛的搞笑程序员动图表情包</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="https://mp.weixin.qq.com/s/sqChrg5t104Y67_PfHuJRQ"
+									class="website" target="_blank">理想与现实</a>
+								<p class="description">程序员找工作中的职位描述 和 现实</p>
+							</li>
+							<li class="hot-item hot-item1"><a href="https://mp.weixin.qq.com/s/7T1KzMUcwl8AXuMompXzvQ"
+									class="website" target="_blank">笑死人代码</a>
+								<p class="description">做程序员多年 ，你写过多少笑死人不偿命的代码？</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="https://mp.weixin.qq.com/s/KteCFLey7rC-OImc53_sVw"
+									class="website" target="_blank">与产品如何厮杀</a>
+								<p class="description">搞笑程序员与产品经理相爱相杀漫画</p>
+							</li>
+							<li class="hot-item hot-item2"><a href="https://mp.weixin.qq.com/s/HEYf8AxOzrR1MshsKgQHWA"
+									class="website" target="_blank">人工智障</a>
+								<p class="description">人工智障又双叒叕出事了，哈哈哈哈哈</p>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="tips">
+
+
+				</div>
+
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="wrapper">
+				<nav id="nav"><a href="http://beian.miit.gov.cn" target="_blank"
+						title="工信部">&copy;京ICP备16055492号-7</a><a href="#" target="_blank">友情链接：</a>&nbsp;&nbsp;<a
+						href="https://uidashen.com/" target="_blank">UI设计导航</a>&nbsp;&nbsp;<a
+						href="https://www.itdage.cn/" target="_blank">ITDAGE.CN</a></nav>
+			</div>
+		</footer>
+
+
+	</body>
+</html>
